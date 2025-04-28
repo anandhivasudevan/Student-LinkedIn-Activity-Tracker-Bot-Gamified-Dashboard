@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White */
+    --foreground: 210 10% 23%; /* Dark Gray */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 210 10% 23%; /* Dark Gray */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 210 10% 23%; /* Dark Gray */
+    --primary: 210 80% 50%; /* LinkedIn Blue */
+    --primary-foreground: 0 0% 100%; /* White */
+    --secondary: 210 40% 96.1%; /* Light Gray */
+    --secondary-foreground: 210 10% 23%; /* Dark Gray */
+    --muted: 210 40% 96.1%; /* Light Gray */
+    --muted-foreground: 210 8% 45.1%; /* Mid Gray */
+    --accent: 180 100% 25%; /* Teal */
+    --accent-foreground: 0 0% 100%; /* White */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 40% 91.4%; /* Lighter Gray */
+    --input: 210 40% 91.4%; /* Lighter Gray */
+    --ring: 210 80% 50%; /* LinkedIn Blue */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 240 5.9% 10%; /* Default dark, adjust if sidebar used */
+    --sidebar-foreground: 210 40% 98%; /* Default dark, adjust if sidebar used */
+    --sidebar-primary: 210 80% 60%; /* Default dark, adjust if sidebar used */
+    --sidebar-primary-foreground: 0 0% 100%; /* Default dark, adjust if sidebar used */
+    --sidebar-accent: 240 3.7% 15.9%; /* Default dark, adjust if sidebar used */
+    --sidebar-accent-foreground: 210 40% 98%; /* Default dark, adjust if sidebar used */
+    --sidebar-border: 240 3.7% 15.9%; /* Default dark, adjust if sidebar used */
+    --sidebar-ring: 210 80% 60%; /* Default dark, adjust if sidebar used */
+  }
+  .dark {
+    --background: 210 10% 15%; /* Dark Blue-Gray */
+    --foreground: 210 40% 98%; /* Off White */
+    --card: 210 10% 18%; /* Slightly Lighter Dark Blue-Gray */
+    --card-foreground: 210 40% 98%; /* Off White */
+    --popover: 210 10% 18%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 80% 60%; /* Lighter LinkedIn Blue */
+    --primary-foreground: 210 10% 15%; /* Dark Blue-Gray */
+    --secondary: 210 10% 25%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 210 10% 25%;
+    --muted-foreground: 210 8% 65.1%;
+    --accent: 180 80% 35%; /* Lighter Teal */
+    --accent-foreground: 0 0% 100%; /* White */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 10% 30%;
+    --input: 210 10% 30%;
+    --ring: 210 80% 60%; /* Lighter LinkedIn Blue */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 210 10% 15%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 210 80% 60%;
+    --sidebar-primary-foreground: 210 10% 15%;
+    --sidebar-accent: 210 10% 25%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 210 10% 30%;
+    --sidebar-ring: 210 80% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-secondary text-foreground; /* Use secondary (light gray) as main background */
+  }
+}
+
+@layer utilities {
+  .text-positive {
+    @apply text-green-600 dark:text-green-500;
+  }
+}
